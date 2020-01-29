@@ -1,0 +1,25 @@
+<html>
+
+<head>
+    <title>Elementos - Rocketseat</title>
+</head>
+
+<body>
+
+    <div id="app">
+        
+    </div>
+    <script>
+        var linkElement = document.createElement('a');
+        linkElement.setAttribute('href', 'http://rocketseat.com.br'); //criando link
+
+        var textElement = document.createTextNode('Rockeatseat');//criando texto representativo
+        linkElement.appendChild(textElement);
+
+        var containerElement = document.querySelector('#app');//referenciando na DOM
+        containerElement.appendChild(linkElement);
+
+    </script>
+</body>
+
+</html>
