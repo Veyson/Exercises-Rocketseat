@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <script type="text/javascript">
+        function repeticao(){
+        var s1 = document.getElementById("n1").value;
+		var s2 = document.getElementById("n2").value;
+
+		for(var r=0; r < s2; r++){
+			alert(s1);
+		}
+		}
+    </script>
+</head>
+<body>
+    <fieldset>
+        <legend>N vezes</legend>
+        <label>Informe nome:</label>
+        <input id="n1" type="text"/>
+		<label>Quantidade de vezes:</label>
+		<input id="n2" type="text"/>
+        <button id="pros" onclick="repeticao()">Prosseguir</button>
+    </fieldset>
+
+</body>
+</html>

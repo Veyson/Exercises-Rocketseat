@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <script type="text/javascript">
+        function conv(){
+        var s1 = document.getElementById("t1").value;
+		var f = ((s1*9) + (32*5))/5;
+		alert(f);
+		}
+
+    </script>
+</head>
+<body>
+    <fieldset>
+        <legend>Conversor de Temperatura</legend>
+        <label>Digite Temperatura em Celsius:</label>
+        <input id="t1" type="text"/><br/><br/>
+        <button id="pros" onclick="conv()">Converter</button>
+    </fieldset>
+
+</body>
+</html>

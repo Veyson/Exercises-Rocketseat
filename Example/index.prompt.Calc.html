@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Prompt - Calculadora</title>
+	<script>
+	var num1 = prompt("Informe primeiro valor: ");
+	var num2 = prompt("Informe segundo valor: ");
+	var op = prompt("Informe operação: ");
+	var r;
+	switch (op){
+		case '+':
+		r = parseInt(num1)+ parseInt(num2);
+		alert(r);
+		break;
+		case '-':
+		r = parseInt(num1)- parseInt(num2);
+		alert(r);
+		break;
+		case '/':
+		r = parseInt(num1)/ parseInt(num2);
+		alert(r);
+		break;
+		case '*':
+		r = parseInt(num1)* parseInt(num2);
+		alert(r);
+		break;
+		default:
+		alert("ERRO!!!");
+		break;
+	}
+	</script>
+</head>
+<body>
+
+</body>
+</html>

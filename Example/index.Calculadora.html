@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <script type="text/javascript">
+        function calcValores(){
+        var s1 = document.getElementById("n1").value;
+		var s2 = document.getElementById("n2").value;
+		var s3 = document.getElementById("n3").value;
+        var r = 0;
+
+		switch(s3){
+			case '+':
+				r = parseInt(s1) + parseInt(s2); 
+				alert (r);
+				break;
+			case '-':
+				r = parseInt(s1) - parseInt(s2); 
+				alert (r);
+				break;
+			case '*':
+				r = parseInt(s1) * parseInt(s2); 
+				alert (r);
+				break;
+			case '/':
+				r = parseInt(s1) / parseInt(s2); 
+				alert (r);
+				break; 
+			default:
+				alert(erro);
+				break;
+		   }
+		}
+    </script>
+</head>
+<body>
+    <fieldset>
+        <legend>Calculadora</legend>
+        <label>Digite numero 1:</label>
+        <input id="n1" type="text"/>
+		<label>Digite numero 2:</label>
+        <input id="n2" type="text"/>
+		<label>Informe Operação:</label>
+        <input id="n3" type="text"/>
+        <button id="pros" onclick="calcValores()">Prosseguir</button>
+    </fieldset>
+
+</body>
+</html>

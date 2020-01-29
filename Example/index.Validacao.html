@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Formulario</title>
+	<script type="text/javascript">
+	
+	function validacao(){
+	
+		var n1 = document.getElementById("n1");
+		var n2 = document.getElementById("n2");
+
+		if(n1 == n2){
+			alert("Autorização Confirmada!");
+		}else{
+			return false;
+		}
+	}
+
+	function ver(){
+		
+		var n;
+
+		if(document.getElementById("n1").value == null || document.getElementById("n1").value ==""){
+
+			document.getElementById("n1").style.background = "red";
+			document.getElementById("n2").style.background = "red";
+
+		}else{
+
+			document.getElementById("n1").style.background = "green";
+			document.getElementById("n2").style.background = "green";
+			document.getElementById('n2').value = document.getElementById('n2').value + document.getElementById('n1').value;	
+			n = document.getElementById("n2").value.length;
+			if(n < 3){
+			alert("Senha Fraca!!!");
+			}if(n == 3|| n == 4 || n== 5){
+				alert("Senha Media!!!");
+			}if(n>=6){
+				alert("Segurança Forte!!!");
+			}
+		}
+
+		
+	}
+	
+	</script>
+</head>
+<body>
+	 <form action="https://www.youtube.com/watch?v=Q9XN14PCJaw">
+		<fieldset>
+        <legend>Formulario</legend>
+        <label>	Informe senha:</label>
+        <input id="n1" type="password" onblur="ver()" onfocus="ver()">
+		<label> Informe senha, novamente:</label>
+        <input id="n2" type="password"/>
+        <input type="submit" value="submit">
+		</fieldset
+    </form>
+</body>
+</html>

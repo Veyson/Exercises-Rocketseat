@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <script type="text/javascript">
+        function mult(){
+        var s1 = document.getElementById("n1").value;
+		var s2 = document.getElementById("n2").value;
+        var r = 0;
+
+
+		r = parseInt(s1) * parseInt(s2);
+		alert(r);
+		}
+
+		function div(){
+        var s1 = document.getElementById("n1").value;
+		var s2 = document.getElementById("n2").value;
+        var r = 0;
+
+		r = parseInt(s1) / parseInt(s2);
+		alert(r);
+		}
+    </script>
+</head>
+<body>
+    <fieldset>
+        <legend>Multi Div</legend>
+        <label>Digite numero 1:</label>
+        <input id="n1" type="text"/><br/><br/>
+		<label>Digite numero 2:</label>
+        <input id="n2" type="text"/><br/><br/>
+		<button id="pros_" onclick="mult()">Multiplicacão</button>
+        <button id="pros" onclick="div()">Divisão</button>
+    </fieldset>
+
+</body>
+</html>

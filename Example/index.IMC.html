@@ -1,0 +1,32 @@
+﻿	<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Massa corporal</title>
+	<script>
+		function calc_imc(){
+	
+		var p = document.getElementById("peso").value;
+		var a = document.getElementById("altura").value;
+		var r = 0;
+	
+		r = parseFloat(p)/(parseFloat(a)*parseFloat(a));
+		return document.getElementById("result").innerHTML = r.toFixed(2);
+		}
+	
+	</script>
+
+</head>
+<body>
+	
+	<fieldset>
+		<legend>IMC</legend>
+		<label>Informe peso:</label><input type="text" id="peso"></input>
+		<label>Informe altura:</label><input type="text" id="altura"></input>
+		<input type="button" onclick="calc_imc()" value="Prosseguir"></input><br/>
+		<label>Resultado: </label><span id="result"></span>
+	
+	</fieldset>
+</body>
+</html>

@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <script type="text/javascript">
+        function somarValores(){
+        var s1 = document.getElementById("s1").value;
+        
+		if(s1 < 10){
+			alert("Insuficiente!");
+		}else if(s1 == 10 || s1  == 11 || s1 == 12 || s1 == 13 || s1==14 ){
+			alert("BOM!");
+		}else if(s1 > 14){
+			alert("MUITO BOM!");
+		}
+        
+    }
+    </script>
+</head>
+<body>
+    <fieldset>
+        <legend>Informe Valor</legend>
+        <label>Digite aqui:</label>
+        <input id="s1" type="text"/>
+        <button id="Prosseguir" onclick="somarValores()">Prosseguir</button>
+    </fieldset>
+ 
+</body>
+</html>

@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Empresarial</title>
+</head>
+<script type="text/javascript">
+
+	function funcVerificar(){
+	
+	var codigo = document.getElementById("n1").value;
+	var anoNasc = document.getElementById("n2").value;
+	var anoAd = document.getElementById("n3").value;
+	var anoATUAL = 2019;
+	var tmptrab;
+	var idade;
+
+	idade = parseInt(anoATUAL) - parseInt(anoNasc);
+	tmptrab = parseInt(anoATUAL) - parseInt(anoAd);
+
+
+	if(idade>=65 || tmptrab>=30){
+		alert("Requerer Aposentadoria!");
+	}
+	if(idade>=60 && tmptrab>=25){
+		alert("Requerer Aposentadoria!");
+	}
+	else{
+		alert("Não Requerer!");
+	}
+	}
+
+</script>
+
+
+<body>
+
+<fieldset>
+
+<center><legend>Verificador Empresarial</legend></center>
+<label>Digite o código do empregado:</label>
+<input id="n1" type= "text"></input><br/><br/>
+<label>Digite a idade do empregado:</label>
+<input id="n2" type= "text"></input><br/><br/>
+<label>Digite o ano de ingresso na empresa:</label>
+<input id="n3" type= "text"></input><br/><br/>
+<button id="xd" onclick="funcVerificar()">Clique Aqui</button>
+
+
+</fieldset>
+</body>
+</html>
